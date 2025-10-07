@@ -1,75 +1,52 @@
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Zap } from "lucide-react";
-import heroImage from "@/assets/hero-welding.jpg";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-hero"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLW9wYWNpdHk9IjAuMSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-30"></div>
       
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Soldagem industrial com faíscas"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
-      </div>
-
-      {/* Sparkles Effect */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-spark rounded-full animate-pulse"></div>
-      <div className="absolute bottom-1/3 right-1/3 w-32 h-32 bg-gradient-spark rounded-full animate-pulse delay-700"></div>
-
-      <div className="relative container mx-auto px-4 py-20">
-        <div className="max-w-4xl">
-          {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-accent/10 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2 mb-8">
-            <Zap className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-foreground">Estruturas de Alta Qualidade</span>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20">
+            <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+            <span className="text-white text-sm font-medium">Estruturas de Alta Qualidade</span>
           </div>
-
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            AÇO DE ALTA{" "}
-            <span className="text-transparent bg-gradient-accent bg-clip-text">
-              QUALIDADE
-            </span>
+          
+          <h1 className="font-oswald font-bold text-5xl md:text-7xl mb-6 leading-tight">
+            <span className="text-white">AÇO DE ALTA</span>
+            <br />
+            <span className="text-accent">QUALIDADE</span>
           </h1>
-
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+          
+          <p className="text-white/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
             Estruturas metálicas resistentes e personalizadas para indústrias, construções e projetos especiais.
           </p>
-
-          {/* Statistics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-accent mb-1">12K+</div>
-              <div className="text-sm text-muted-foreground">Clientes</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-accent mb-1">55%</div>
-              <div className="text-sm text-muted-foreground">Crescimento</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-accent mb-1">5K+</div>
-              <div className="text-sm text-muted-foreground">Projetos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-accent mb-1">99%</div>
-              <div className="text-sm text-muted-foreground">Satisfação</div>
-            </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            {[
+              { value: "12K+", label: "Clientes" },
+              { value: "55%", label: "Crescimento" },
+              { value: "5K+", label: "Projetos" },
+              { value: "99%", label: "Avaliações" }
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl md:text-4xl font-oswald font-bold text-white mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-white/80 text-sm">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="xl" className="group">
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold group">
               Solicitar Orçamento
-              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="spark" size="xl">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm font-semibold">
               Ver Nossos Produtos
             </Button>
           </div>
