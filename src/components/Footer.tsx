@@ -1,18 +1,19 @@
 const Footer = () => {
-  const productLinks = [
+const productLinks = [
     "Tubo Redondo",
-    "Telha Vagalume",
-    "Vigas Estruturais",
-    "Perfis Metálicos",
-    "Chapas de Aço",
-    "Estruturas Personalizadas"
+    "Perfil Estrutural",
+    "Tubo Metalon",
+    "Telha Simples e Sanduíche",
+    "Cantoneira Laminada",
+    "Ferro Redondo Maciço"
   ];
-
+  
   const navigationLinks = [
     { label: "Home", href: "#home" },
     { label: "Produtos", href: "#produtos" },
     { label: "Quem Somos", href: "#sobre" },
-    { label: "Contato", href: "#contato" }
+    { label: "Contato", href: "#contato" },
+    { label: "Localização", href: "#local" }
   ];
 
   return (
@@ -21,12 +22,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-secondary rounded flex items-center justify-center">
-                <span className="text-2xl font-bold text-white font-oswald">G</span>
-              </div>
               <div>
-                <h3 className="font-oswald font-bold text-xl">GuerAço</h3>
-                <p className="text-xs text-white/70">Estruturas Metálicas</p>
+                 <span className="text-gray-400">GUER</span>
+                 <span className="text-blue-1000">AÇO</span>
               </div>
             </div>
             <p className="text-white/80 text-sm leading-relaxed mb-6">
@@ -95,16 +93,16 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/70">
             <p>
-              © 2024 GuerAço - Estruturas Metálicas. Todos os direitos reservados.
+              © 2025 GuerAço - Aço Estrutural. Todos os direitos reservados.
             </p>
-            <div className="flex gap-6">
+             {/*<div className="flex gap-6">
               <a href="#" className="hover:text-accent transition-colors">
                 Política de Privacidade
               </a>
               <a href="#" className="hover:text-accent transition-colors">
                 Termos de Uso
               </a>
-            </div>
+             </div>*/}
           </div>
         </div>
       </div>

@@ -4,10 +4,10 @@ import { Phone, Mail } from "lucide-react";
 
 const salesTeam = [
   {
-    initial: "D",
-    name: "DAGMAR",
-    phone: "16 9709-6075",
-    email: "dagmar.jose@terra.com.br"
+    initial: "G",
+    name: "GABRIEL",
+    phone: "16 99176-0284",
+    email: "gabriel.gueraco@gmail.com"
   },
   {
     initial: "P",
@@ -16,11 +16,11 @@ const salesTeam = [
     email: "paulo.gueraco@gmail.com"
   },
   {
-    initial: "G",
-    name: "GABRIEL",
-    phone: "16 9176-0284",
-    email: "gabriel.gueraco@gmail.com"
-  }
+    initial: "D",
+    name: "DAGMAR",
+    phone: "16 99709-6075",
+    email: "dagmar.jose@terra.com.br"
+  },
 ];
 
 const SalesSection = () => {

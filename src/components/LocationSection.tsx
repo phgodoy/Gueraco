@@ -4,7 +4,7 @@ import { MapPin, Navigation } from "lucide-react";
 
 const LocationSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="local" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-oswald font-bold text-4xl md:text-5xl text-secondary mb-4">

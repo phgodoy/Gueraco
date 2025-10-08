@@ -18,7 +18,6 @@ const Navigation = () => {
                 <span className="text-gray-400">GUER</span>
                 <span className="text-blue-1000">AÇO</span>
               </h1>
-              <p className="text-xs text-muted-foreground">Aço Estrutural</p>
             </div>
           </div>
           
@@ -34,6 +33,9 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-secondary transition-colors font-medium">
               Contato
+            </button>
+             <button onClick={() => scrollToSection('local')} className="text-foreground hover:text-secondary transition-colors font-medium">
+              Nossa Localização
             </button>
           </div>
 
