@@ -42,10 +42,16 @@ const HeroSection = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <a
+            href="https://wa.me/16991760284?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20GuerAço.%20Vi%20que%20vocês%20trabalham%20com%20soluções%20em%20aço%20para%20indústrias%20e%20construções%2C%20e%20quero%20mais%20informações."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold group">
               Solicitar Orçamento
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
+            </a>
             <Button size="lg" variant="outline" className="border-2 border-white text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm font-semibold">
               Ver Nossos Produtos
             </Button>
