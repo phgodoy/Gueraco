@@ -55,20 +55,20 @@ const LocationSection = () => {
                 </div>
               </div>
 
-        <Button
-  asChild
-  className="w-full"
-  size="lg"
->
-  <a
-    href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Armiro%20Barbosa%2C%20185%2C%20Ribeir%C3%A3o%20Preto%2C%20SP"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Navigation className="w-4 h-4 mr-2" />
-    Como Chegar
-  </a>
-</Button>
+              <Button
+                asChild
+                className="w-full"
+                size="lg"
+              >
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Armiro%20Barbosa%2C%20185%2C%20Ribeir%C3%A3o%20Preto%2C%20SP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Navigation className="w-4 h-4 mr-2" />
+                  Como Chegar
+                </a>
+              </Button>
             </CardContent>
           </Card>
 
