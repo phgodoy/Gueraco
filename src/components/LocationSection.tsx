@@ -55,16 +55,26 @@ const LocationSection = () => {
                 </div>
               </div>
 
-              <Button className="w-full" size="lg">
-                <Navigation className="w-4 h-4 mr-2" />
-                Como Chegar
-              </Button>
+        <Button
+  asChild
+  className="w-full"
+  size="lg"
+>
+  <a
+    href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Armiro%20Barbosa%2C%20185%2C%20Ribeir%C3%A3o%20Preto%2C%20SP"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Navigation className="w-4 h-4 mr-2" />
+    Como Chegar
+  </a>
+</Button>
             </CardContent>
           </Card>
 
           <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl border-2 border-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.4547634890947!2d-47.8169!3d-21.1767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEwJzM2LjEiUyA0N8KwNDknMDAuOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.865433832837!2d-47.771629289409745!3d-21.157752880442775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf8204665d6f%3A0xd1adab6daad46d03!2sR.%20Armiro%20Barbosa%2C%20185%20-%20Jardim%20Joquei%20Clube%2C%20Ribeir%C3%A3o%20Preto%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1760211285269!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}
