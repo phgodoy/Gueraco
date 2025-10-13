@@ -38,7 +38,10 @@ const productLinks = [
                 📞 (16) 3615-9230
               </p>
               <p className="flex items-center gap-2">
-                ✉️ contato@gueraco.com.br
+                ✉️ pvguerra@gmail.com
+              </p>
+              <p className="flex items-center gap-2">
+                ✉️ gabriel.gueraco@gmail.com
               </p>
             </div>
           </div>
@@ -74,14 +77,10 @@ const productLinks = [
             <div className="space-y-3 text-sm">
               <div>
                 <p className="text-white/90 font-medium">Segunda a Sexta</p>
-                <p className="text-white/70">7h às 17h</p>
+                <p className="text-white/70">7h às 17h:30</p>
               </div>
               <div>
-                <p className="text-white/90 font-medium">Sábado</p>
-                <p className="text-white/70">7h às 12h</p>
-              </div>
-              <div>
-                <p className="text-white/90 font-medium">Domingo</p>
+                <p className="text-white/90 font-medium">Sábado e Domingo</p>
                 <p className="text-white/70">Fechado</p>
               </div>
             </div>

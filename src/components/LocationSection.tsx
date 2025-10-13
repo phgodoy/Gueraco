@@ -42,14 +42,10 @@ const LocationSection = () => {
                 <div className="space-y-2 text-muted-foreground">
                   <div className="flex justify-between">
                     <span>Segunda a Sexta:</span>
-                    <span className="font-semibold">7h às 17h</span>
+                    <span className="font-semibold">7h às 17h:30</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Sábado:</span>
-                    <span className="font-semibold">7h às 12h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Domingo:</span>
+                    <span>Sábado e Domingo:</span>
                     <span className="font-semibold">Fechado</span>
                   </div>
                 </div>

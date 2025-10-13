@@ -10,17 +10,17 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefone",
-    content: ["(16) 3615-9230", "WhatsApp: (16) 99136-6236"]
+    content: ["(16) 3615-9230", "WhatsApp: (16) 997096075"]
   },
   {
     icon: Mail,
     title: "E-mail",
-    content: ["contato@gueraco.com.br", "vendas@gueraco.com.br"]
+    content: ["pvguerra@gmail.com", "gabriel.gueraco@gmail.com"]
   },
   {
     icon: Clock,
     title: "Horário",
-    content: ["Segunda a Sexta: 7h às 17h", "Sábado: 7h às 12h"]
+    content: ["Segunda a Sexta: 7h às 17h:30", "Sábado e Domingo: Fechado"]
   }
 ];
 
